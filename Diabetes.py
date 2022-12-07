@@ -22,6 +22,10 @@ diabetes
 
 diabetes.info()
 
+## Entendendo a correlação entre as variáveis
+
+diabetes.cov()
+
 
 # In[4]:
 
