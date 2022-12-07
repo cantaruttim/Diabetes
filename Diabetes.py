@@ -26,6 +26,11 @@ diabetes.info()
 
 diabetes.cov()
 
+# 
+
+plot = sn.heatmap(diabetes.corr(), annot = True, fmt=".1f", linewidths=.6)
+plot
+
 
 # In[4]:
 
