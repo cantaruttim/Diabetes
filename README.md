@@ -54,6 +54,10 @@ Por meio da análise da correlação podemos obter um mapa de calor, onde mostra
 
 ![image](https://user-images.githubusercontent.com/81988636/206432064-bcf55dcd-c081-4256-b6b8-3cf8b5f0b2e1.png)
 
+Por meio do algortimo LASSO podemos observar o se os dados que existem no dataset são bons para podermos realizar a implementação do modelo
+
+![image](https://user-images.githubusercontent.com/81988636/206455596-c51f99c3-bc4d-4515-960f-c1fbd1d4149f.png)
+
 As variáveis que me chamaram mais atenção ao realizar a análise das correlações, foram as idade (`age`), colesterol total (`tc`), o valor de LDL (`ldl`), o valor de HDL (`hdl`) e o índice de glicose plasmática (`glu`)
 
 A descrição de cada variáveis segue conforme a documentação:
