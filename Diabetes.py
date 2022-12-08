@@ -8,12 +8,15 @@ import pandas as pd
 import seaborn as sns
 get_ipython().run_line_magic('matplotlib', 'inline')
 import numpy as np
+from sklearn.linear_model import Lasso
+from sklearn.model_selection import train_test_split
+from yellowbrick.regressor import PredictionError
 
 
 # In[2]:
 
 
-diabetes = pd.read_csv("diabetes.rwrite1.txt", encoding= "utf_8", delimiter=" ")
+diabetes = pd.read_csv("diabetes.rwrite1.csv", encoding= "utf_8", delimiter=" ")
 diabetes
 
 
@@ -120,6 +123,21 @@ X
 
 y = diabetes.iloc[:, 10].values
 y
+
+# Passando os parâmetros para o modelo
+X = diabetes.iloc[:, 0:10]
+y = diabetes.iloc[:, 10]
+
+# Create the train and test data
+X_train, X_test, y_train, y_test = train_test_split(X, y, test_size=0.2, random_state=42)
+
+# Instantiate the linear model and visualizer
+model = Lasso()
+visualizer = PredictionError(model)
+
+visualizer.fit(X_train, y_train)  # Fit the training data to the visualizer
+visualizer.score(X_test, y_test)  # Evaluate the model on the test data
+visualizer.show()                 # Finalize and render the figure
 
 
 # In[15]:
