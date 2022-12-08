@@ -49,6 +49,11 @@ Ao observar as correlações entre as variáveis, obtive esse gráfico
 
 ![image](https://user-images.githubusercontent.com/81988636/203664010-48e25f02-f49e-4647-b9ec-7756fc61604a.png)
 
+Por meio da análise da correlação podemos obter um mapa de calor, onde mostra de forma mais clara as correlações entre as variáveis do dataset
+`plot = sns.heatmap(diabetes.corr(), annot = True, fmt=".1f", linewidths=.6)`
+
+![image](https://user-images.githubusercontent.com/81988636/206432064-bcf55dcd-c081-4256-b6b8-3cf8b5f0b2e1.png)
+
 As variáveis que me chamaram mais atenção ao realizar a análise das correlações, foram as idade (`age`), colesterol total (`tc`), o valor de LDL (`ldl`), o valor de HDL (`hdl`) e o índice de glicose plasmática (`glu`)
 
 A descrição de cada variáveis segue conforme a documentação:
