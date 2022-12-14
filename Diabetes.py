@@ -31,9 +31,7 @@ diabetes.cov()
 
 # 
 
-plot = sn.heatmap(diabetes.corr(), annot = True, fmt=".1f", linewidths=.6)
-plot
-
+sns.heatmap(diabetes.corr(), annot = True, fmt=".1f", linewidths=.6)
 
 # In[4]:
 
@@ -150,7 +148,7 @@ from sklearn.linear_model import LinearRegression
 # In[16]:
 
 
-reg =LinearRegression().fit(X, y)
+reg =LinearRegression(n_jobs = 30).fit(X, y)
 
 
 # In[23]:
