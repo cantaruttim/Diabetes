@@ -1,4 +1,4 @@
-# Diabetes - Modelos de Regressão Linear
+# Diabetes
 
 Este projeto teve como objetivo aplicar modelos de machine learning, utilizando a biblioteca scikit-learn, carregando o banco: Diabetes Database (https://scikit-learn.org/stable/datasets/toy_dataset.html#diabetes-dataset)
  
