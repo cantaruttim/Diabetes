@@ -11,7 +11,7 @@ Este projeto teve como objetivo aplicar modelos de machine learning, utilizando 
 
 ### Procedimentos:
 
-Para realizar as primeiras análises foram utilizadas as seguintes bibliotecas
+Para realizar as análises iniciais foram utilizadas as seguintes bibliotecas
 
  ```
  
@@ -82,6 +82,8 @@ A descrição de cada variáveis segue conforme a documentação:
 
 - s6 glu, blood sugar level
 
+- y, mostra a progressão da doença com base nos dados fornecidos (variáveis dependentes). 
+
 ### Gráficos das variávies :
 
 - [ ] Para idade
@@ -129,24 +131,5 @@ Esses gráficos ilustram muito bem qual o tipo de problema que estamos enfrentan
 A variável X obteve os valores : `X = diabetes.iloc[:, 0:10].values` do DataSet
 A variável y obeteve apenas o valore da coluna `y` :`y = diabetes.iloc[:, 10].values`
 
-
-#### Modelos
-
-```
-from sklearn.linear_model import LinearRegression
-from sklearn.linear_model import Ridge
-from sklearn.linear_model import RidgeCV
-
-from sklearn.linear_model import SGDRegressor
-from sklearn.pipeline import make_pipeline
-from sklearn.preprocessing import StandardScaler
-```
-
-### Resultados
-
-Para cada modelo, obteve-se os valores de:
-
-- Linear Regression: reg.score(X, y) = 0.5177494254132934
-- Ridge : clf.score(X,y) = 0.45123139467990536
-- RidgeCV : clf_cv.score(X, y) = 0.5166287840315835
-- SGDRegressor : reg_sdg.score(X, y) = 0.5138156128090378
+## Agrupamento 
+Desta forma procuro por meio deste projeto mostrar os agrupamentos existentes nesses dados. Inicialmente podemos observar que temos 3 principais grupos de diabéticos (prograssão da doença)
